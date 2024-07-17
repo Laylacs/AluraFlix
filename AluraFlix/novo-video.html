@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Vídeo - AluraFlix</title>
+    <link rel="stylesheet" href="novo-video.css">
+</head>
+<body>
+    <header>
+        <h1>ALURAFLIX</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="novo-video.html">Novo Vídeo</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h2>Novo Vídeo</h2>
+            <form id="novo-video-form">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="frontend">Front-end</option>
+                    <option value="backend">Back-end</option>
+                    <option value="mobile">Mobile</option>
+                </select>
+
+                <label for="imagem">Imagem</label>
+                <input type="url" id="imagem" name="imagem" required>
+
+                <label for="video">Vídeo</label>
+                <input type="url" id="video" name="video" required>
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+
+                <button type="submit">Guardar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>ALURAFLIX</p>
+    </footer>
+    <script src="novo-video.js"></script>
+</body>
+</html>
